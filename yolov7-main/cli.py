@@ -1,7 +1,7 @@
 import fire
 
 from yolov7-main.detect import run as detect
-from yolov7-main.export import run as export
+from yolov7-main.models.common import export as export
 from yolov7-main.train import run_cli as train
 from yolov7-main.test import run as test
 
