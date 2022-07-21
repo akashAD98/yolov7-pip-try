@@ -61,10 +61,10 @@ class YOLOv7:
         return results
 
 if __name__ == "__main__":
-    model_path = "yolov7/weights/yolov7.pt"
+    model_path = "yolov7-main/weights/yolov7.pt"
     device = "cuda"
     model = load_model(model_path=model_path, device=device)
 
     from PIL import Image
-    imgs = [Image.open(x) for x in Path("yolov7/data/images").glob("*.jpg")]
+    imgs = [Image.open(x) for x in Path("yolov7-main/data/images").glob("*.jpg")]
     results = model(imgs)
