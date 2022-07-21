@@ -66,5 +66,5 @@ if __name__ == "__main__":
     model = load_model(model_path=model_path, device=device)
 
     from PIL import Image
-    imgs = [Image.open(x) for x in Path("yolov5/data/images").glob("*.jpg")]
+    imgs = [Image.open(x) for x in Path("yolov7/data/images").glob("*.jpg")]
     results = model(imgs)
